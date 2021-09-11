@@ -450,7 +450,20 @@ input{
     position: fixed;
     z-index: 100;
     margin-top: -15em;
+    animation: ld 4s ease-in;
+    animation-delay: 5s;
     
+  }
+
+  @keyframes ld {
+    from{
+      width: 100%;
+      opacity: 1;
+    }
+    to{
+      width: -0%;
+      opacity: 0;
+    }
   }
   
  }
@@ -710,4 +723,8 @@ a:hover
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+iframe{
+  height: 0;
+  width: 0;
 }
