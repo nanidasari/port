@@ -450,8 +450,9 @@ input{
     position: fixed;
     z-index: 100;
     margin-top: -15em;
-    animation: ld 4s ease-in;
-    animation-delay: 5s;
+    margin-left: -10px;
+    animation: ld 7s ease-in;
+    
     
   }
 
@@ -478,8 +479,25 @@ input{
     position: fixed;
     z-index: 100;
     margin-top: -15em;
+    margin-left: -10px;
+    animation: ld 7s ease-in;
+    animation-delay: .0s;
+
     
   }
+
+  @keyframes ld {
+    from{
+      width: 100%;
+      opacity: 1;
+    }
+    to{
+      width: 0;
+      opacity: 0;
+    }
+  }
+  
+  
  .navbar{
    display: none;
  }
