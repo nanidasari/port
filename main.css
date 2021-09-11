@@ -1,6 +1,7 @@
 
 
 
+
 .nav{
     background-color: #ffff;
     border-bottom: solid 1px #345B63;
@@ -441,13 +442,31 @@ input{
     display: none;
   }
  
-  
+  #preld{
+    background: #000 url(id.gif) no-repeat center center;
+    background-size: 20%;
+    height: 120vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin-top: -15em;
+    
+  }
   
  }
 
 
 @media only screen and (max-width: 900px) {
-  
+  #preld{
+    background: #000 url(id.gif) no-repeat center center;
+    background-size: 20%;
+    height: 120vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin-top: -15em;
+    
+  }
  .navbar{
    display: none;
  }
