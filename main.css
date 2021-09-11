@@ -451,10 +451,22 @@ input{
     z-index: 100;
     margin-top: -15em;
     margin-left: -10px;
+    animation: ld 10s ease-in;
+    
     
   }
 
- 
+  @keyframes ld {
+    from{
+      width: 100%;
+      opacity: 1;
+    }
+    to{
+      width: -0%;
+      opacity: 0;
+    }
+  }
+  
  }
 
 
@@ -467,9 +479,25 @@ input{
     position: fixed;
     z-index: 100;
     margin-top: -15em;
-    margin-left: -10px;
+    margin-left: -8px;
+    animation: ld 4s ease-in ;
+    
     
   }
+
+
+  @keyframes ld {
+    from{
+      width: 100%;
+      opacity: 1;
+    }
+    to{
+      width: -0%;
+      opacity: 0;
+      display:none;
+    }
+  }
+  
  .navbar{
    display: none;
  }
