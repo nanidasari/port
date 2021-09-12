@@ -474,7 +474,6 @@ input{
     margin-top: -15em;
     margin-left: -10px;
     animation: ld 10s ease-in;
-      animation-delay: 3s;
     
     
   }
@@ -504,7 +503,6 @@ input{
     margin-top: -15em;
     margin-left: -8px;
     animation: ld 4s ease-in ;
-       animation-delay: 3s;
     
     
   }
@@ -799,4 +797,10 @@ a:hover
 iframe{
   height: 0;
   width: 0;
+}
+
+
+.qt{
+  background-color: #ffffff;
+      position: relative;
 }
