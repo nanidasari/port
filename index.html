@@ -215,8 +215,11 @@ justify-content: center;" >
 
 <p id="ab" data-aos="fade-up" style="text-align: center; font-size: small;font-weight: normal;font-weight: bolder;font-size: xx-large; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">About</p>
 <hr style="width: 50%; color: rgb(150, 147, 147);" data-aos="fade-up">
-<div class="about" style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center" data-aos="zoom-in">
+  <img class="pi" src="pp.jfif" alt="img">
+</div>
 
+<div class="about" style="display: flex; justify-content: center;">
   
   <p data-aos="fade-up" style=" margin-top: -4em; padding: 10vh; font-size: small;font-weight: normal;line-height: 25px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
     <b>Hi,</b><br>
@@ -262,10 +265,10 @@ justify-content: center;" >
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTwCDpFJEZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/ZTwCDpFJEZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-<div class="nav" data-aos="fade-up" >
+<div id="nav" class="nav" data-aos="fade-up" >
     <ul>
       <img src="fav.png" alt="logo" width="16px" height="16px" >
-        <a class="name" href="">Isaac Dasari</a>
+        <a id="li"  class="name" href="">Isaac Dasari</a>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="#sk">Skill</a>
@@ -281,11 +284,10 @@ justify-content: center;" >
         
         
         <li style="float: right;">
-        <a class="navbar" href="">Home</a>
-        <a class="navbar" href="#sk">Skill</a>
-        <a class="navbar" href="#so">Social</a>
-        <a class="navbar" href="#ab">About</a>
-        <a class="navbar" href="#co">Contact me</a>
+        <a id="li2" class="navbar" href="">Home</a>
+        <a id="li3"  class="navbar" href="#so">Social</a>
+        <a id="li4"  class="navbar" href="#ab">About</a>
+        <a id="li5"  class="navbar" href="#co">Contact me</a>
     </li>
     <!--        MIT License        -->
 
@@ -316,6 +318,35 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+
+
+    window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {
+  if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
+    
+    document.getElementById("nav").style.background = "#FFFFFF";
+    document.getElementById("li").style.color = "#5F7A61";
+
+    document.getElementById("li2").style.color = "#5F7A61";
+    document.getElementById("li3").style.color = "#5F7A61";
+    document.getElementById("li4").style.color = "#5F7A61";
+    document.getElementById("li5").style.color = "#5F7A61";
+    document.getElementById("nav").style.boxShadow = "5px 5px 20px rgba(0,0,0,0.2)";
+    
+  } else {
+   
+    document.getElementById("nav").style.background = "none";
+    document.getElementById("li").style.color = "#FFFFFF";
+    document.getElementById("li2").style.color = "#FFFFFF";
+    document.getElementById("li3").style.color = "#FFFFFF";
+    document.getElementById("li4").style.color = "#FFFFFF";
+    document.getElementById("li5").style.color = "#FFFFFF";
+    document.getElementById("nav").style.boxShadow = "none";
+    
+  }
 }
 </script>
 
