@@ -58,7 +58,7 @@
 <div class="skil-div" id="sk" >
     
       <div class="skill-bars" data-aos="fade-up">
-        <p style="text-align: center;font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">Web Dev & Programming</p>
+        <p style="text-align: center;font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">Web Dev</p>
         <div class="bar">
           <div class="info">
             <span>HTML</span>
@@ -297,37 +297,37 @@ justify-content: center;" >
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
-
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 
 <script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
 
     window.onscroll = function() {scrollFunction()};
  
 function scrollFunction() {
   if (document.body.scrollTop > 620 || document.documentElement.scrollTop > 620) {
-    
+    document.getElementById("myBtn").style.display = "block";
     document.getElementById("nav").style.background = "#FFFFFF";
+
     document.getElementById("li").style.color = "#5F7A61";
 
     document.getElementById("li2").style.color = "#5F7A61";
@@ -337,7 +337,7 @@ function scrollFunction() {
     document.getElementById("nav").style.boxShadow = "5px 5px 20px rgba(0,0,0,0.2)";
     
   } else {
-   
+    document.getElementById("myBtn").style.display = "none";
     document.getElementById("nav").style.background = "none";
     document.getElementById("li").style.color = "#FFFFFF";
     document.getElementById("li2").style.color = "#FFFFFF";
