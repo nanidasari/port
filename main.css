@@ -1,13 +1,13 @@
 
 body{
   overflow-x: hidden;
-  background-color: #f00000;
+
 }
 
 
 .nav{
-    background-color: #ffff;
-    border-bottom: solid 1px rgb(170, 170, 170);
+    
+   
     position: fixed;
     top: 0;
     width: 100%;
@@ -38,7 +38,7 @@ a{
  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  font-weight: bolder;
  font-size: medium;
- color: #420516;
+ color: #ffffff;
 }
 .name:hover{
     color: #00A19D;
@@ -51,11 +51,12 @@ a{
     font-weight: bold;
     margin: 25px;
     text-align: center;
-    color: #5F7A61;  
+    color: #ffffff;  
 }
-.navbar:hover{
+#li:hover{
     color: #A45D5D;
 }
+
 
 .mem{
     animation-name: opa;
@@ -64,7 +65,7 @@ a{
 
 }
 .t{
-    color: black;
+    color: #FFC069;
     margin-top:3em;
     margin-left: 1.5em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -84,7 +85,7 @@ a{
 }
 
 .title{
-    color: black;
+    color: #FFC069;
     margin-top: -1em;
     margin-left: 1em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -99,7 +100,7 @@ a{
 }
 
 .title:after {
-    color: #f00000;
+    color: #FD6F96;
     content: "Isaac Dasari";
   }
 
@@ -116,7 +117,7 @@ a{
 }
 
   .txt{
-    color: #6E85B2;
+    color: #F7F6F2;
     overflow: hidden;
     margin-top: -3.9em;
     margin-left: 4em;
@@ -493,7 +494,8 @@ input{
     z-index: 100;
     margin-top: -15em;
     margin-left: -10px;
-    animation: ld 10s ease-in;animation: delay;3s
+    animation: ld 10s ease-in;
+    animation-delay: 3s;
     
     
   }
@@ -572,7 +574,7 @@ input{
 }
 
 .t{
-  color: black;
+  color: #FFC069;
   margin-top:3em;
   margin-left: 1.1em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -592,7 +594,7 @@ input{
 }
 
 .title{
-  color: black;
+  color: #FFC069;
   margin-top: -1em;
   margin-left: 1.2em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -607,7 +609,7 @@ input{
 }
 
 .title:after {
-  color: #f00000;
+  color: #FD6F96;
   content: "Isaac Dasari";
 }
 
@@ -624,7 +626,7 @@ input{
 }
 
 .txt{
-  color: #6E85B2;
+  color: #F7F6F2;
   margin-top: -1em;
   margin-left: 4em;
   height: auto;
@@ -875,6 +877,7 @@ iframe{
 
 
 .g{
+  margin-top: -2em;
  height: 120%;
   background-color: black; 
  
@@ -902,3 +905,11 @@ iframe{
     100%{background-position:0% 50%}
 }
 
+.pi{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -4em; padding: 10vh;
+  
+  
+}
