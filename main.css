@@ -829,7 +829,7 @@ iframe{
 
 .waves {
   position:absolute;
-  width: 100%;
+  width: 98.8%;
   height:15vh;
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
