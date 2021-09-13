@@ -1,6 +1,7 @@
 
 body{
   overflow-x: hidden;
+  background-color: #f00000;
 }
 
 
@@ -486,24 +487,22 @@ input{
   #preld{
     background: #000 url(id.gif) no-repeat center center;
     background-size: 20%;
-    height: 120vh;
+    height: 180vh;
     width: 100%;
     position: fixed;
     z-index: 100;
     margin-top: -15em;
     margin-left: -10px;
-    animation: ld 10s ease-in;
+    animation: ld 10s ease-in;animation: delay;3s
     
     
   }
 
   @keyframes ld {
     from{
-      width: 100%;
       opacity: 1;
     }
     to{
-      width: -0%;
       opacity: 0;
     }
   }
@@ -515,25 +514,25 @@ input{
   #preld{
     background: #000 url(id.gif) no-repeat center center;
     background-size: 30%;
-    height: 120vh;
+    height: 180vh;
     width: 100%;
     position: fixed;
     z-index: 100;
     margin-top: -15em;
     margin-left: -8px;
     animation: ld 4s ease-in ;
-    
+    animation-delay: 3s;
     
   }
 
 
   @keyframes ld {
     from{
-      width: 100%;
+    
       opacity: 1;
     }
     to{
-      width: -0%;
+ 
       opacity: 0;
       display:none;
     }
@@ -555,9 +554,6 @@ input{
 
 }
 
-.g{
-  height: 250%;
-}
 
 
 
@@ -872,6 +868,7 @@ iframe{
   .waves {
     height:80px;
     min-height:80px;
+    width: 96.6%;
   }
   
 }
