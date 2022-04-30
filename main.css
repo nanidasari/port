@@ -880,7 +880,7 @@ input:focus{
   position: relative;
   top: 5em;
   bottom: 0;
-  left: 2em;
+  left: 1em;
   right: 0;
   border-radius: 10px;
   border: none;
@@ -895,13 +895,13 @@ input:focus{
       background: black;
 }
 #so{
-  margin-top: 3em;
+  margin-top: 5em;
 }
 
 #s{
 
   position: relative;
-  top: 3em;
+  top: 3.5em;
   bottom: 0;
   left: 1em;
   right: 0;
@@ -915,7 +915,7 @@ input:focus{
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 20px;
+  margin: 10px;
   background-color: rgb(38, 38, 38);
   
   border-radius: 30%;
