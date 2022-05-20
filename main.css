@@ -35,7 +35,7 @@ body{
   height: 100%;
 background-position: center;
 background-size: cover;
-opacity: 20%;
+opacity: 50%;
 position: absolute;
 margin: auto;
 top: 0;
@@ -214,7 +214,7 @@ font-family: Bradley Hand, cursive; font-weight: bolder;
 
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
+  50%{background-position100% 50%}
   100%{background-position:0% 50%}
 }
 @-moz-keyframes AnimationName {
