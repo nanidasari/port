@@ -30,15 +30,13 @@ body{
 
 }
 .cov{
-  background-image: url(2.jpg);
-  width: 98%;
-  height: 100%;
-background-position: center;
-background-size: cover;
-opacity: 50%;
-position: absolute;
-margin: auto;
-top: 0;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 50%;
 }
 .al{
   text-decoration: none;
@@ -94,6 +92,31 @@ font-family: Bradley Hand, cursive; font-weight: bolder;
     text-align: center;
     color: #ffffff;  
 }
+#li2{
+  color: #000000;
+}
+#li3{
+  color: #000000;
+}
+#li4{
+  color: #000000;
+}
+#li5{
+  color: #000000;
+}
+
+#li2:hover{
+  color: #ff0000;
+}
+#li3:hover{
+  color: #ff0000;
+}
+#li4:hover{
+  color: #ff0000;
+}
+#li5:hover{
+  color: #ff0000;
+}
 
 #li:hover{
     color: #A45D5D;
@@ -128,7 +151,7 @@ font-family: Bradley Hand, cursive; font-weight: bolder;
 }
 
 .title{
-    color: white;
+    color: transparent;
     -webkit-text-stroke: 2px black;
     margin-top: -1em;
     margin-left: 1em;
@@ -144,9 +167,9 @@ font-family: Bradley Hand, cursive; font-weight: bolder;
 }
 
 .title:after {
-    color: #fffdfd;
+    color: transparent;
     content: "Isaac Dasari";
-    -webkit-text-stroke: #00A19D 2px;
+    -webkit-text-stroke: #5a0e04 2px;
   }
 
   @keyframes tl {
@@ -214,7 +237,7 @@ font-family: Bradley Hand, cursive; font-weight: bolder;
 
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
-  50%{background-position100% 50%}
+  50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
 @-moz-keyframes AnimationName {
@@ -668,6 +691,16 @@ input:focus{
   border-radius: 20px;
 }
 @media only screen and (max-width: 900px) {
+
+  .cov{
+    height: 100%;
+    width: 300%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -15em;
+    opacity: 30%;
+   }
   #preld{
     background: rgb(255, 255, 255) url(id.gif) no-repeat center center;
     background-size: 80%;
@@ -709,7 +742,7 @@ input:focus{
     right: 0;
     width:100%;
     height: 570px;
-    background-color: rgb(255, 255, 255);
+    background-color:transparent;
     border-radius: 20px;
   }
 
@@ -800,8 +833,8 @@ input:focus{
   height: auto;
   width: auto;
    float: right;
-   height: 540px;
-   width:380px;
+   height: 600px;
+   width:440px;
    background-attachment: fixed;
    display: flex;
 }
@@ -827,7 +860,7 @@ input:focus{
 }
 
 .title{
-  color: white;
+  color: transparent;
   -webkit-text-stroke: 2px black;
   margin-top: -1em;
   margin-left: 1.2em;
@@ -843,7 +876,7 @@ input:focus{
 }
 
 .title:after {
-  color: #ffffff;
+  color: transparent;
   content: "Isaac Dasari";
   
   -webkit-text-stroke: 2px rgb(82, 3, 3);
