@@ -204,7 +204,7 @@ font-family: Bradley Hand, cursive; font-weight: bolder;
       width: 0
     }
     to {
-      width: 60%
+      width: 60%;
     }
   }
   /* The typewriter cursor effect */
@@ -647,7 +647,10 @@ input:focus{
 }
 
 @media only screen and (min-width: 900px) {
-  
+  .rw{
+    display: grid;
+ grid-template-columns: auto auto auto auto ;
+  }
   nav{
     display: none;
      
@@ -692,13 +695,15 @@ input:focus{
 }
 @media only screen and (max-width: 900px) {
 
-
+.rw{
+  display: grid;
+  grid-template-columns: auto ;
+}
 
   .p2{
  
     border-radius: 1%;
-    height: 400px;
-    width: 205px;
+    
     margin-top: -3em; padding: 10vh;
    
     
@@ -707,8 +712,8 @@ input:focus{
 .p12{
   display: block;
   background-color: #000;
-  height: 400px;
-  width: 205px;
+  height: 3200px;
+  width: 245px;
   position: absolute; 
   opacity: 0%;
  margin: auto;
@@ -740,11 +745,14 @@ input:focus{
 }
 .hover{
   position: relative;
-  margin: auto;
+  margin: 0;
   top: 0;
   left: 0;
+  display: grid;
+
   
 }
+
 .hover:hover .visit{
   display: block;
 }
